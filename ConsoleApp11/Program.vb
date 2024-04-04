@@ -14,7 +14,7 @@ Module studentprog
             Console.WriteLine("Enter Name:")
             newStudent.Name = Console.ReadLine()
             Console.WriteLine("Enter Roll Number:")
-            newStudent.Rollno = Integer.Parse(Console.ReadLine())
+            newStudent.Rollno = Console.ReadLine()
             students(stdno) = newStudent
         End Sub
 
@@ -22,7 +22,7 @@ Module studentprog
             Console.WriteLine("Enter marks for Student " & students(stdno).Name & ":")
             For i As Integer = 0 To 2
                 Console.WriteLine("Enter mark " & (i + 1) & ":")
-                students(stdno).Marks(i) = Single.Parse(Console.ReadLine())
+                students(stdno).Marks(i) = Console.ReadLine()
             Next
         End Sub
 
